@@ -50,7 +50,7 @@ namespace Comida_Upgrade
             try
             {
                 var bs = new BindingSource();
-                const string url = "http://exeat.run.edu.ng/comido/cgi_bin/fetch_cafeteria_details.php";
+                const string url = "http://localhost/comido/cgi_bin/fetch_cafeteria_details.php";
                // var ds = new DataSet();
                 var request = (HttpWebRequest)WebRequest.Create(url);
                 request.Timeout = 80000;
@@ -109,7 +109,7 @@ namespace Comida_Upgrade
         {
             try
             {
-                const string url = "http://exeat.run.edu.ng/comido/cgi_bin/fetch_cafeteria_details.php";
+                const string url = "http://localhost/comido/cgi_bin/fetch_cafeteria_details.php";
                 var requ = WebRequest.Create(url);
                 requ.Timeout = 80000;
                 var responses = requ.GetResponse();
