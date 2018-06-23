@@ -39,7 +39,7 @@ namespace Comida_Upgrade
             try
             {
                 var to = textBox1.Text.Trim();
-                var url = "http://exeat.run.edu.ng/comido/cgi_bin/is_staff.php?username=" + to;
+                var url = "http://localhost/comido/cgi_bin/is_staff.php?username=" + to;
                 var requ = WebRequest.Create(url);
                 requ.Timeout = 80000;
                 var response = requ.GetResponse();
