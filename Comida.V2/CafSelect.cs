@@ -67,7 +67,7 @@ namespace Comida.V2
         {
             try
             {
-               const string url = "http://exeat.run.edu.ng/comido/cgi_bin/fetch_cafeteria_details.php";
+               const string url = "http://localhost/comido/cgi_bin/fetch_cafeteria_details.php";
                 var request = (HttpWebRequest) WebRequest.Create(url);
                 request.Timeout = 80000;
                 request.ContentType = "application/xml";
@@ -129,7 +129,7 @@ namespace Comida.V2
         {
             try
             {
-                const string url = "http://exeat.run.edu.ng/comido/cgi_bin/fetch_cafeteria_details.php";
+                const string url = "http://localhost/comido/cgi_bin/fetch_cafeteria_details.php";
                 var requ = WebRequest.Create(url);
                 requ.Timeout = 80000;
                 var responses = requ.GetResponse();
