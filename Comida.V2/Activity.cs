@@ -156,7 +156,7 @@ namespace Comida.V2
                 var datetime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                 const string type = "cash";
                 const string pin = "null";
-                var url = "http://exeat.run.edu.ng/comido/cgi_bin/insert_transaction.php?matric=" + matric +
+                var url = "http://localhost/comido/cgi_bin/insert_transaction.php?matric=" + matric +
                           "&pin=" + pin + "&attendant=" + attendant + "&amount=" + price + "&datetime=" +
                           datetime + "&type=" + type + "&CafID=" + cafid + "";
                 var requ = WebRequest.Create(url);
